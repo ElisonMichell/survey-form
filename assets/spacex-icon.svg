@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #fff;
+        stroke-width: 3px;
+      }
+
+      .cls-2 {
+        fill: #fff;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <circle id="Elipse_1" data-name="Elipse 1" class="cls-1" cx="64" cy="64" r="40"/>
+  <path id="Forma_1_copiar" data-name="Forma 1 copiar" class="cls-2" d="M99,24H95L64,55,53,44H35L55,64,40,79h4L59,64,41,46H51L64,59ZM29,104h4L64,73,75,84H93L73,64,88,49H84L69,64,87,82H77L64,69Z"/>
+</svg>

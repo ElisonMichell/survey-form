@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="A SpaceX Survey Form about living in Mars">
+        <meta name="keywords" content="Survey Form, SpaceX, Elon Musk, Mars, Space, Exploration">
+        <meta name="author" content="Elison Michell">
+        <title>SpaceX Survey Form</title>
+
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="./css/styles.css"/>
+        <link rel="icon" href="./assets/spacex-icon.svg"/>
+    </head>
+    <body>
+        <header>
+            <div class="header-container">
+                <div class="page-navigation">
+                    <div class="icon-wrapper">
+                        <img class="home-button" alt="SpaceX icon" src="./assets/spacex-icon.svg">
+                    </div>
+                    <div class="nav-container">
+                        <p class="nav-iten">Home</p>
+                        <p class="nav-iten">Falcon 9</p>
+                        <p class="nav-iten">Starship</p>
+                        <p>Products</p>
+                    </div>
+                    <div class="icon-wrapper">
+                        <img class="menu-button" alt="Menu button" src="./assets/menu-icon.svg">
+                    </div>
+                </div>
+                <div class="logo-container">
+                    <img alt="SpaceX Logo" src="./images/spacex-logo.png" width="80%">
+                    <h1 id="title">Survey Form</h1>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="info-container">
+                <div class="info-section">
+                    <P class="info-title">City on Mars</P>
+                    <p id="description" class="info">
+                        The Starship will enable SpaceX to send humans and cargo to Mars
+                         and will be capable of launching over 100 tons or 100 people into space at a time.
+                    </p>
+                </div>
+                <div class="info-section">
+                    <p class="info-title">Why Mars?</p>
+                    <p id="description" class="info">
+                        Mars is one of Earth's closest habitable neighbors.
+                        Mars is about half again as far from the Sun as Earth is, 
+                        so it still has decent sunlight. It is a little cold, but we can warm it up.
+                    </p>
+                </div>
+            </div>
+
+            <form id="survey-form">
+                <div class="form-container">
+                    <label id="name-label" class="form-element">
+                        <p class="element-title">Name</p>
+                        <input id="name" class="element" type="text" placeholder="Enter your name" required>
+                    </label>
+                    <label id="email-label" class="form-element">
+                        <p class="element-title">Email</p>
+                        <input id="email" class="element" type="email" placeholder="Enter your Email" required>
+                    </label>
+                    <label id="number-label" class="form-element">
+                        <p class="element-title">Age</p>
+                        <input id="number" class="element" type="number" min="1" max="120" placeholder="Age">
+                    </label>
+                    <label class="form-element">
+                        <p class="element-title">Gender</p>
+                        <select id="dropdown" class="element">
+                            <option value="" selected disabled>Select your gender</option>
+                            <option value="female">Female</option>
+                            <option value="male">Male</option>
+                            <option value="non-binary">Non-binary</option>
+                        </select>
+                    </label>
+                    <div class="form-element">
+                        <p class="element-title">Did you know about the mission to Mars before this survey?</p>
+                        <div class="flex-row">
+                            <input id="q1-yes" class="radio-button" type="radio" name="question-1" value="yes">
+                            <label for="q1-yes">Yes</label>
+                        </div>
+                        <div class="flex-row">
+                            <input id="q1-no" class="radio-button" type="radio" name="question-1" value="no">
+                            <label for="q1-no">No</label>
+                        </div>
+                    </div>
+                    <div class="form-element">
+                        <p class="element-title">Would you like to live on Mars?</p>
+                        <div class="flex-row">
+                            <input id="q2-yes" class="radio-button" type="radio" name="question-2" value="yes">
+                            <label for="q2-yes">Yes</label>
+                        </div>
+                        
+                        <div class="flex-row">
+                            <input id="q2-no" class="radio-button" type="radio" name="question-2" value="no">
+                            <label for="q2-no">No</label>
+                        </div>
+                    </div>
+                    <div class="form-element">
+                        <p class="element-title">Would you want to travel to another planet even if it meant you couldn't see your family again?</p>
+                        <div class="flex-row">
+                            <input id="q3-yes" class="radio-button" type="radio" name="question-3" value="yes">
+                            <label for="q3-yes">Yes</label>
+                        </div>
+                        <div class="flex-row">
+                            <input id="q3-no" class="radio-button" type="radio" name="question-3" value="no">
+                            <label for="q3-no">No</label>
+                        </div>
+                    </div>
+                    <div class="form-element">
+                        <p class="element-title">Do you think living on Earth is sustainable?</p>
+                        <div class="flex-row">
+                            <input id="q4-yes" class="radio-button" type="radio" name="question-4" value="yes">
+                            <label for="q4-yes">Yes</label>
+                        </div>
+                        <div class="flex-row">
+                            <input id="q4-no" class="radio-button" type="radio" name="question-4" value="no">
+                            <label for="q4-no">No</label>
+                        </div>
+                    </div>
+                    <div class="form-element">
+                        <p class="element-title">What other spacex projects did you know before this survey?</p>
+                        <div class="checkbox-container">
+                            <input id="falcon9" type="checkbox" name="projects" value="falcon9">
+                            <label for="falcon9">Falcon 9</label>
+                        </div>
+                        <div class="checkbox-container">
+                            <input id="falcon-heavy" type="checkbox" name="projects" value="falcon-heavy">
+                            <label for="falcon-heavy">Falcon Heavy</label>
+                        </div>
+                        <div class="checkbox-container">
+                            <input id="starship" type="checkbox" name="projects" value="starship">
+                            <label for="starship">Starship</label>
+                        </div>
+                        <div class="checkbox-container">
+                            <input id="human-spaceflight" type="checkbox" name="projects" value="human-spaceflight">
+                            <label for="human-spaceflight">Human Spaceflight</label>
+                        </div>
+                        <div class="checkbox-container">
+                            <input id="rideshare" type="checkbox" name="projects" value="rideshare">
+                            <label for="rideshare">Rideshare</label>
+                        </div>
+                        <div class="checkbox-container">
+                            <input id="starlink" type="checkbox" name="projects" value="starlink">
+                            <label for="starlink">Starlink</label>
+                        </div>
+                    </div>
+                    <label class="form-element">
+                        <p class="element-title">Any comments or suggestions?</p>
+                        <textarea class="text-area" name="comments" placeholder="Enter your comment here..." ></textarea>
+                    </label>
+                    <button id="submit" type="submit" value="Submit">Submit</button>
+                </div>               
+            </form>
+        </main>
+        <footer>
+            <p class="copyright-text">Elison Michell © 2022</p>
+            <a class="footer-button" href="mailto:dev.elisonmichell@gmail.com">
+                <p>Gmail</p>
+            </a>
+            <a class="footer-button" href="https://github.com/ElisonMichell" target="_blank">
+                <p>Github</p>
+            </a>
+            <a class="footer-button" href="https://www.linkedin.com/in/dev-elison-michell/" target="_blank">
+                <p>LinkedIn</p>
+            </a>
+        </footer>
+        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    </body>
+</html>
